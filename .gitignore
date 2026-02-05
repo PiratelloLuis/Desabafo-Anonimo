@@ -1,0 +1,292 @@
+# ==========================================
+# BACKEND (Java/Spring Boot/Maven)
+# ==========================================
+
+# Maven
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+backend/pom.xml.tag
+backend/pom.xml.releaseBackup
+backend/pom.xml.versionsBackup
+backend/pom.xml.next
+backend/release.properties
+backend/dependency-reduced-pom.xml
+backend/buildNumber.properties
+backend/.mvn/timing.properties
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/bin/
+
+# IntelliJ IDEA
+backend/.idea/
+backend/*.iml
+backend/*.iws
+backend/*.ipr
+backend/out/
+
+# NetBeans
+backend/nbproject/private/
+backend/nbbuild/
+backend/dist/
+backend/nbdist/
+backend/.nb-gradle/
+
+# VS Code
+backend/.vscode/
+backend/.factorypath
+
+# Configurações sensíveis
+backend/src/main/resources/application.properties
+backend/src/main/resources/application-*.properties
+backend/src/main/resources/*.yml
+backend/src/main/resources/*.yaml
+!backend/src/main/resources/application.properties.example
+
+# Logs do Spring Boot
+backend/spring.log
+backend/logs/
+
+# ==========================================
+# FRONTEND (React)
+# ==========================================
+
+# Dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+# Testing
+frontend/coverage/
+
+# Production
+frontend/build/
+frontend/dist/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/.env.production
+!frontend/.env.example
+
+# Debug logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/lerna-debug.log*
+frontend/.npm
+frontend/.eslintcache
+
+# Yarn
+frontend/.yarn/cache
+frontend/.yarn/unplugged
+frontend/.yarn/build-state.yml
+frontend/.yarn/install-state.gz
+frontend/.pnp.*
+
+# Package manager lock files (opcional, dependendo da sua preferência)
+# frontend/package-lock.json
+# frontend/yarn.lock
+
+# ==========================================
+# DATABASE
+# ==========================================
+
+# Arquivos de banco local
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# Dumps
+*.sql
+*.dump
+!database/setup.sql
+
+# ==========================================
+# IDE GERAL
+# ==========================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+.*.sw*
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ==========================================
+# SISTEMA OPERACIONAL
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ==========================================
+# LOGS
+# ==========================================
+
+*.log
+logs/
+log/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ==========================================
+# TEMPORÁRIOS E CACHE
+# ==========================================
+
+*.tmp
+*.temp
+*.cache
+*.bak
+*.backup
+*.orig
+*.rej
+.cache/
+.temp/
+
+# ==========================================
+# COMPILADOS E BUILD
+# ==========================================
+
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ==========================================
+# SEGURANÇA E CREDENCIAIS
+# ==========================================
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Certificados e chaves
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.jks
+*.keystore
+
+# Secrets
+secrets/
+.secrets/
+*.secret
+
+# ==========================================
+# DOCKER (caso use no futuro)
+# ==========================================
+
+# docker-compose.override.yml
+
+# ==========================================
+# OUTROS
+# ==========================================
+
+# Arquivos de teste
+test-output/
+*.test
+*.spec
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Arquivos gerados
+generated/
+gen/
+
+# Arquivos de configuração local
+local.properties

@@ -1,0 +1,21 @@
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/desabafo_db
+spring.datasource.username=SEU_USUARIO_AQUI
+spring.datasource.password=SUA_SENHA_AQUI
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Server Configuration
+server.port=8080
+server.address=0.0.0.0
+
+# Permitir CORS
+spring.web.cors.allowed-origins=*
+spring.web.cors.allowed-methods=*
+spring.web.cors.allowed-headers=*
+spring.web.cors.max-age=3600
