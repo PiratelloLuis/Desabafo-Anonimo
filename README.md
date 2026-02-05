@@ -193,7 +193,6 @@ Visualização de desabafos aleatórios de outros usuários.
 
 - 🎤 **Áudio**: Implementar gravação e reprodução de áudios
 - 🏷️ **Categorias**: Adicionar categorias aos desabafos
-- ❤️ **Reações**: Permitir reações anônimas aos desabafos
 - 🎯 **Filtros**: Filtrar desabafos por data/categoria
 - 🎲 **Aleatoriedade**: Sistema de aletoriedade melhorado para não repetir desabafos
 
