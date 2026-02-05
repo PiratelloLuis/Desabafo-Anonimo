@@ -211,7 +211,7 @@ Este projeto está sob a licença MIT.
 
 ## 👨‍💻 Autor
 
-Desenvolvido com 💜 durante uma sessão de vibecodando!
+Desenvolvido por PiratelloLuis com o 💜!
 
 ---
 
