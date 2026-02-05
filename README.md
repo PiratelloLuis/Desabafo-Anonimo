@@ -195,7 +195,7 @@ Visualização de desabafos aleatórios de outros usuários.
 - 🏷️ **Categorias**: Adicionar categorias aos desabafos
 - ❤️ **Reações**: Permitir reações anônimas aos desabafos
 - 🎯 **Filtros**: Filtrar desabafos por data/categoria
-- 📊 **Dashboard**: Estatísticas mais detalhadas
+- 🎲 **Aleatoriedade**: Sistema de aletoriedade melhorado para não repetir desabafos
 
 ## 🤝 Contribuindo
 
