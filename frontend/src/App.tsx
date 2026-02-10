@@ -1,22 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FormEvent } from 'react';
 import { messageService } from './services/api';
+import { Message, Stats, ViewType } from './types';
 import './App.css';
 
-function App() {
-  const [view, setView] = useState('home'); // home, send, receive, my
-  const [content, setContent] = useState('');
-  const [randomMessage, setRandomMessage] = useState(null);
-  const [myMessages, setMyMessages] = useState([]);
-  const [stats, setStats] = useState({ totalMessages: 0 });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
+const App: React.FC = () => {
+  const [view, setView] = useState<ViewType>('home');
+  const [content, setContent] = useState<string>('');
+  const [randomMessage, setRandomMessage] = useState<Message | null>(null);
+  const [myMessages, setMyMessages] = useState<Message[]>([]);
+  const [stats, setStats] = useState<Stats>({ totalMessages: 0 });
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string>('');
+  const [success, setSuccess] = useState<string>('');
 
   useEffect(() => {
     loadStats();
   }, []);
 
-  const loadStats = async () => {
+  const loadStats = async (): Promise<void> => {
     try {
       const data = await messageService.getStats();
       setStats(data);
@@ -25,7 +26,7 @@ function App() {
     }
   };
 
-  const handleSendMessage = async (e) => {
+  const handleSendMessage = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
     setError('');
     setSuccess('');
@@ -37,14 +38,14 @@ function App() {
       setContent('');
       loadStats();
       setTimeout(() => setView('home'), 2000);
-    } catch (err) {
+    } catch (err: any) {
       setError(err.response?.data?.message || 'Erro ao enviar desabafo');
     } finally {
       setLoading(false);
     }
   };
 
-  const handleGetRandomMessage = async () => {
+  const handleGetRandomMessage = async (): Promise<void> => {
     setError('');
     setLoading(true);
 
@@ -62,7 +63,7 @@ function App() {
     }
   };
 
-  const handleLoadMyMessages = async () => {
+  const handleLoadMyMessages = async (): Promise<void> => {
     setError('');
     setLoading(true);
 
@@ -76,7 +77,7 @@ function App() {
     }
   };
 
-  const renderHome = () => (
+  const renderHome = (): JSX.Element => (
     <div className="home-container">
       <h1 className="title">Desabafo Anônimo</h1>
       <p className="subtitle">
@@ -118,7 +119,7 @@ function App() {
     </div>
   );
 
-  const renderSend = () => (
+  const renderSend = (): JSX.Element => (
     <div className="send-container">
       <button className="btn-back" onClick={() => setView('home')}>
         ← Voltar
@@ -157,7 +158,7 @@ function App() {
     </div>
   );
 
-  const renderReceive = () => (
+  const renderReceive = (): JSX.Element => (
     <div className="receive-container">
       <button className="btn-back" onClick={() => setView('home')}>
         ← Voltar
@@ -194,7 +195,7 @@ function App() {
     </div>
   );
 
-  const renderMyMessages = () => (
+  const renderMyMessages = (): JSX.Element => (
     <div className="my-messages-container">
       <button className="btn-back" onClick={() => setView('home')}>
         ← Voltar
@@ -239,6 +240,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

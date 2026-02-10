@@ -1,13 +1,18 @@
 {
-  "name": "desabafo-anonimo-frontend",
-  "version": "1.0.0",
+  "name": "desabafo-anonimo",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "axios": "^1.7.7",
-    "web-vitals": "^2.1.4"
+    "axios": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "4.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,8 +22,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
